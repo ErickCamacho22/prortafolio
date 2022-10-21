@@ -1,0 +1,159 @@
+/* Start css Cards */
+
+.info {
+  width: 100%;
+  height: auto;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: #1b242f;
+}
+
+
+
+.cards {
+  width: 100%;
+  height: auto;
+  justify-content: center;
+  align-items: center;
+}
+
+.cardInfo {
+  float: left;
+  width: 205px;
+  height: 305px;
+  border-radius: 3px;
+  box-shadow: 1px 1px 4px #1b242f;
+  background: #f5f5f5;
+  overflow: hidden;
+  margin: 22px;
+  margin-top: 40px;
+  cursor: pointer;
+  transition: all 300ms;
+}
+.cardInfo:first-child{
+    margin-left: 300px;
+}
+
+.cardInfo:hover {
+  background: #1b242f;
+  color: #f5f5f5;
+}
+
+.cardInfo .icon {
+  color: #1b242f;
+  height: 100px;
+  width: 100px;
+  padding-top: 20px;
+  display: block;
+  line-height: 110px;
+  text-align: center;
+  margin: 0px auto;
+  transition: all 300ms;
+}
+
+.cardInfo:hover .icon {
+  animation: showIcon 300ms linear;
+  -webkit-animation: showIcon 300ms linear;
+  color: #04c2c9;
+}
+
+@keyframes showIcon {
+  from {
+    transform: translateY(-200%);
+  }
+  to {
+    transform: translateY(0%);
+  }
+}
+
+.cardInfo .category {
+  width: 100%;
+  height: 50px;
+  margin-top: 30px;
+  font-family: "TrebuchetMS";
+  color: #1b242f;
+  font-size: 20px;
+  text-align: center;
+  font-weight: bold;
+  transition: all 300ms;
+}
+
+.cardInfo:hover .category {
+  color: #f5f5f5;
+  animation: showCategory 400ms linear;
+}
+@keyframes showCategory {
+  from {
+    transform: translateY(-300%);
+    color: #1b242f;
+  }
+  to {
+    transform: translateY(0%);
+    color: #f5f5f5;
+  }
+}
+
+.cardInfo .description {
+  color: #1b242f;
+  font-size: 15px;
+  text-align: center;
+  transition: all 300ms;
+}
+
+.cardInfo:hover .description {
+  color: #f5f5f5;
+  animation: showDescription 400ms linear;
+}
+
+@keyframes showDescription {
+  from {
+    transform: translateX(-300%);
+    color: #1b242f;
+  }
+  to {
+    transform: translateX(0%);
+    color: #f5f5f5;
+  }
+}
+
+/* End css Cards */
+
+/* Start css Description */
+
+/*Imagen*/
+
+.container{
+  margin-bottom: 70px;
+  height: 100%;
+}
+.color{
+  width: 360px;
+  height: 480px;
+  margin-left: 173px;
+  display: inline-flex;
+  box-shadow: 1px 1px 10px #1b242f;
+  border-radius: 5px;
+  filter: grayscale(100%);
+  -webkit-filter: grayscale(100%);
+}
+
+.color:hover{
+  filter: grayscale(0%);
+  -webkit-filter: grayscale(0%);
+}
+
+.descripcion{
+  float: right;
+  width: 565px;
+  margin-top: 127px;
+  margin-right: -24px;
+  padding-left: 20px;
+  padding-right: 20px;
+  border-radius: 3px;
+  box-shadow: 1px 1px 4px #1b242f;
+  background: #f5f5f5;
+}
+
+/* End css Description */
+

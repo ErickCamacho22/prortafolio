@@ -1,0 +1,71 @@
+.container{
+    margin-left: 250px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.cards1{
+    width: 100%;
+    margin-left: 100px;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin-top: 100px;
+}
+
+.card1 {
+    position: relative;
+    height: 250px;
+    width: 350px;
+    overflow: hidden;
+    border-radius: 6px;
+    cursor: pointer;
+    float: left;
+}
+.card1 img{
+    width: 100%;
+    height: 100%;
+    transition: all 500ms ease-out;
+}
+.description1 a{
+    display: inline-flex;
+    text-decoration: none;
+    background-color: #04c2c9;
+    color: #F5F5F5;
+    width: 100px;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.cards1 figure .description1{
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(27,36,47,.5);
+    color: #F5F5F5;    
+    transition: all 500ms ease-out;
+    opacity: 0;
+    visibility: hidden;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.cards1 figure:hover > .description1{
+    opacity: 1;
+    visibility: visible;
+}
+.cards1 figure .description1 h3{
+    margin-top: 70px;
+    margin-bottom: 15px;
+}
+
+.cards1 figure:hover > .description1 h3{
+    margin-top: 70px;
+    margin-bottom: 15px;
+}
+
